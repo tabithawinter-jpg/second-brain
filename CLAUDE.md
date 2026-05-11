@@ -71,4 +71,4 @@ Populated references:
 
 ---
 
-*This brain was built with the `/second-brain` skill from the [Build Your Second Brain with Claude](https://github.com/<owner>/second-brain) bootcamp kit.*
+*This brain was built with the `/second-brain` skill from the [Build Your Second Brain with Claude](https://github.com/tabithawinter-jpg/second-brain) bootcamp kit.*

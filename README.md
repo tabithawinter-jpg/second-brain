@@ -34,7 +34,7 @@ You don't need to know how `git` works. You don't need to install anything beyon
 If you have Claude Code installed and you're comfortable running terminal commands:
 
 ```bash
-git clone https://github.com/<owner>/second-brain.git my-brain
+git clone https://github.com/tabithawinter-jpg/second-brain.git my-brain
 cd my-brain
 claude
 ```

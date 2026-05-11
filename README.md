@@ -21,13 +21,16 @@ Pick the path that matches your comfort level. **Path B is the simpler default.*
 
 You don't need to know how `git` works. You don't need to install anything beyond Claude Desktop.
 
-1. On this GitHub page, click the green **Code** button → **Download ZIP**.
-2. Unzip on your computer. You'll get a folder called `second-brain-main`. Rename it to something you'll recognise (e.g. `my-brain`) and put it somewhere you can find again (e.g. `~/Documents/my-brain`).
-3. Open **Claude Desktop**. Click **New Project**. Give it a name (e.g. "My Second Brain").
-4. In the project, **add the folder** as a project file source. Claude will read everything in it.
-5. In a new chat inside that project, type: `/second-brain` and press Enter.
-6. Answer the 8 questions. Take your time. When the skill finishes, your brain is built.
-7. Then type: `/hire` and answer 6 more questions to set up your first AI employee.
+1. On this GitHub page, click the green **`<> Code`** button → **Download ZIP**.
+2. Unzip on your computer. You'll get a folder called `second-brain-main`. Rename it to something you'll recognise (e.g. `my-brain`) and move it somewhere you can find again (e.g. `~/Documents/my-brain`).
+3. Open **Claude Desktop**. In the left sidebar, click **Projects**, then click **+ New project** in the top right.
+4. From the three options that appear, pick the third one: **Use an existing folder**.
+5. A folder picker opens. Navigate to your `my-brain` folder and select it. The project name auto-fills as `my-brain`. Leave Instructions empty. Click **Create**.
+6. The project opens with your folder already linked under "On your computer" in the right sidebar. In the chat box, ask: *"Please read `.claude/skills/second-brain/SKILL.md` and follow those instructions to build my second brain."*
+7. Answer the 8 questions one at a time. Take your time. When the skill finishes, your brain is built.
+8. To hire your first AI employee, in the same project: *"Please read `.claude/skills/hire/SKILL.md` and follow those instructions to hire my first AI employee."*
+
+> *Why the long prompt instead of `/second-brain` or `/hire`?* Cowork doesn't yet auto-discover skill files the way Claude Code does. The natural-language prompt does the same job: it tells Claude to open the skill file and run it. Same outcome.
 
 ### Path A: Claude Code (faster once you're set up)
 

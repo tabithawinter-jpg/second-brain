@@ -178,17 +178,29 @@ Fill the `{brain owner}` placeholders with the user's name from `context/about-m
 
 ## Phase 3. The closing screen
 
-Print exactly these three blocks (one blank line between each):
+After writing the file, show the user what was just created so they can see the JD without hunting for the file. Print **exactly** in this shape (one blank line between each block):
 
 ```
 ✓ {Name} is hired. Their JD is at employees/{slug}.md.
 
-Try them now: open a fresh Cowork project, paste the contents of employees/{slug}.md as project instructions, then ask {Name} to introduce themselves and tell you what they'll do for you this week.
+Here's what I wrote:
+
+---
+
+{Full content of the file you just wrote, starting from `# You are {Name}` and ending at the last line. Do not include the YAML frontmatter; start from the first heading.}
+
+---
+
+Try them now: open a new chat in this same project and say hi by name. For example: "Hi {Name}, introduce yourself and tell me what you'll do for me this week."
 
 Tomorrow on Day 3, we put them to work.
 ```
 
-Substitute the real name and slug. Do not print anything else. No narration of what you just did, no "let me know if you need anything else", no recap of the file you wrote.
+Substitute the real name and slug. Print the actual file content between the `---` separators so the user can read what was captured without navigating to the file.
+
+The user does **not** paste anything into the project Instructions field. The project's root `CLAUDE.md` handles employee routing: when the user addresses {Name} by name in any chat in this project, Claude reads `employees/{slug}.md` and adopts that identity. One brain, many employees, all live in the same project.
+
+Do not print anything else after the closing screen. No "let me know if you need anything else", no narration of what you just did beyond the file contents already shown.
 
 ## Hard rules (do not violate)
 

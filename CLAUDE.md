@@ -67,7 +67,22 @@ Populated references:
 
 - Ask questions in plain language. Claude will use the files above to ground its answers in your actual business.
 - To update the brain, edit `second-brain-intake.md` and re-run `/second-brain`. Previous file versions back up to `archives/`.
-- To add an AI employee, run `/hire`. The employee leans on this brain.
+- To hire an AI employee, run `/hire`. The employee leans on this brain.
+
+---
+
+## How AI employees work
+
+When the user addresses any AI employee by name in this project (for example "Hi Cleo", "Cleo, can you draft this for me?", "Cassandra, what should I focus on?"), do the following before responding:
+
+1. Look in the `employees/` folder for a file matching that name (slugify the name: lowercase, hyphens replace spaces, strip punctuation). So "Cleo" maps to `employees/cleo.md`, "Cassandra Reid" maps to `employees/cassandra-reid.md`.
+2. If a matching file exists, read it in full. The file is written in second-person ("You are…", "You do…"). Adopt that identity from this point in the chat and respond as that employee.
+3. Stay in that employee's voice and authority for every subsequent response in the chat, until the user addresses a different employee by name. Switching employees is just switching names.
+4. If no matching file exists, treat the name as a regular conversational reference rather than an employee invocation.
+
+The employee's persona, voice, responsibilities, and boundaries come from their file. Their knowledge base is everything in `context/` and `references/`. Ground every answer in those files, not in generic assumptions.
+
+Multiple employees can coexist in this project. Each `employees/<name>.md` file is a separate hire. One brain, many employees. The brain is the shared substrate; the employee is the lens on top.
 
 ---
 

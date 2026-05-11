@@ -72,7 +72,7 @@ my-brain/
     └── <name>.md                ← your first AI employee's JD
 ```
 
-That `employees/<name>.md` file is ready to paste into a Claude project as instructions. Your AI employee comes alive on Day 3 of the bootcamp.
+Your AI employee comes alive on Day 3 of the bootcamp. To call them into a chat, just address them by name. Saying *"Hi Cleo, what should I focus on?"* causes Claude to read `employees/cleo.md`, adopt that identity, and respond as Cleo. Switching employees is just switching names. One brain, many employees, all in the same project.
 
 ---
 
@@ -81,7 +81,7 @@ That `employees/<name>.md` file is ready to paste into a Claude project as instr
 Both skills are **idempotent**. You can re-run them as your business changes.
 
 - Edit `second-brain-intake.md` (your answers), re-run `/second-brain`, and the brain regenerates. Previous versions back up to `archives/`.
-- Re-run `/hire` with a different name to add a second employee. Same name twice will create `<name>-2.md`, not overwrite.
+- Run `/hire` again with a different name to add a second employee. Same name twice creates `<name>-2.md`, not overwrite. All employees live in the same project and you switch between them by addressing them by name.
 
 You drive the brain by editing answers in the intake file. The skill does the file-writing.
 
